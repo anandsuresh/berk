@@ -1,5 +1,6 @@
 {
   "name": "berk_assets",
+  "type": "module",
   "version": "0.1.0",
   "description": "Internet Computer starter application",
   "keywords": [
@@ -37,5 +38,8 @@
     "last 2 firefox version",
     "last 2 safari version",
     "last 2 edge version"
-  ]
+  ],
+  "dependencies": {
+    "node-fetch": "^3.0.0"
+  }
 }

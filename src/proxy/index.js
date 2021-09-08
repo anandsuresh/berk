@@ -1,5 +1,23 @@
-const http = require('http')
-const fs = require('fs')
+import fetch from 'node-fetch'
+import http from 'http'
+import fs from 'fs'
+import { createActor } from '../declarations/berk/index.js';
+
+const berk = createActor('rrkah-fqaaa-aaaaa-aaaaq-cai', {
+  agentOptions: {
+    fetch,
+    host: 'http://localhost:8000'
+    // host: 'https://ic0.app'
+  }
+});
+
+try {
+  berk.getHead()
+  .then(console.log)
+  .catch(console.log)
+} catch (err) {
+  console.log(err)
+}
 
 const locks = new Set()
 const server = http.createServer()

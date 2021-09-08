@@ -3,19 +3,6 @@
     "berk": {
       "main": "src/berk/main.mo",
       "type": "motoko"
-    },
-    "berk_assets": {
-      "dependencies": [
-        "berk"
-      ],
-      "frontend": {
-        "entrypoint": "src/berk_assets/src/index.html"
-      },
-      "source": [
-        "src/berk_assets/assets",
-        "dist/berk_assets/"
-      ],
-      "type": "assets"
     }
   },
   "defaults": {

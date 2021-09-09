@@ -1,3 +1,11 @@
 service : {
   getHead: () -> (text) query;
+  getInfoPacks: () -> (text) query;
+  getObject: (text) -> (opt blob) query;
+  getRefs: () -> (text) query;
+  lock: (text) -> (bool);
+  moveObject: (text, text) -> ();
+  putObject: (text, blob) -> ();
+  putRef: (text, text) -> ();
+  unlock: (text) -> (bool);
 }

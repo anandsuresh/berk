@@ -3,7 +3,7 @@ import http from 'http'
 import fs from 'fs'
 import { createActor } from '../declarations/berk/index.js';
 
-const berk = createActor('rrkah-fqaaa-aaaaa-aaaaq-cai', {
+const berk = createActor(process.argv[2], {
   agentOptions: {
     fetch,
     host: 'http://localhost:8000'

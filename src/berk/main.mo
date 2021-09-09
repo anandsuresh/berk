@@ -5,6 +5,7 @@ import Hash "mo:base/Hash";
 import HashMap "mo:base/HashMap";
 import Text "mo:base/Text";
 
+
 actor Repository {
     ///////////
     // State //
@@ -23,7 +24,7 @@ actor Repository {
     /////////////////////
 
     public query func getHead(): async Text {
-        Debug.print ("Found HEAD: " # HEAD);
+        Debug.print ("GET /HEAD: " # HEAD);
         HEAD
     };
 
